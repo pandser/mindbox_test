@@ -48,14 +48,3 @@ class Triangle(Figure):
                 return True
             data.append(gipotenusa)
         return False
-
-
-if __name__ == '__main__':
-    
-    triangle_1 = Triangle(3, 4, 5)
-    triangle_2 = Triangle(12, 14, 17)
-
-    print(triangle_1.square())
-    print(triangle_1.rectangular())
-    print(triangle_2.square())
-    print(triangle_2.rectangular())
