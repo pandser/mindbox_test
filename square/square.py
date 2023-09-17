@@ -48,18 +48,3 @@ class Triangle(Figure):
                 return True
             data.append(gipotenusa)
         return False
-
-if __name__ == '__main__':
-    c1 = Circle(5)
-    c2 = Circle('0.76')
-    t1 = Triangle(3, 5, 7)
-    t2 = Triangle(3, 4, '5')
-    # t3 = Triangle(0, 5, 3)
-    # t3 = Triangle(9, 5, 3)
-    print(c1.square())
-    print(c2.square())
-    print(t1.square())
-    print(t1.rectangular())
-    print(t2.square())
-    print(t2.rectangular())
-    # print(t3.square())
