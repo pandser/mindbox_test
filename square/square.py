@@ -7,7 +7,7 @@ class Figure:
 
 class Circle(Figure):
 
-    def __init__(self, r: int|float) -> None:
+    def __init__(self, r):
         if float(r) <= 0:
             raise Exception(
                 'Радиус окружности должен быть положительным числом'
@@ -19,7 +19,7 @@ class Circle(Figure):
     
 class Triangle(Figure):
 
-    def __init__(self, a: int|float, b: int|float, c: int|float) -> None:
+    def __init__(self, a, b, c):
         if float(a) <= 0 or float(b) <= 0 or float(c) <= 0:
             raise Exception('Длинна стороны не может быть меьше или равна 0')
         data = [float(a), float(b), float(c)]
@@ -48,3 +48,14 @@ class Triangle(Figure):
                 return True
             data.append(gipotenusa)
         return False
+
+
+if __name__ == '__main__':
+    
+    triangle_1 = Triangle(3, 4, 5)
+    triangle_2 = Triangle(12, 14, 17)
+
+    print(triangle_1.square())
+    print(triangle_1.rectangular())
+    print(triangle_2.square())
+    print(triangle_2.rectangular())
